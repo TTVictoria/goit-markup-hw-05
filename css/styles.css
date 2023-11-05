@@ -602,42 +602,61 @@ padding: 0;}
 .icon-ellipse-footer {
     fill: #F4F4FD;}
 
-.subscribe {
-    color: var(--WHITE, #FFF);
-        /* Body Medium */
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        /* 150% */
-        letter-spacing: 0.32px;
-        display: block;
+
+.p-subscribe {
+    margin-bottom: 16px; /*для визначення відступів між параграфом та наступним елементом*/
+    font-weight: 500; /*для визначення жирності шрифту*/
+    font-size: 16px; /*для визначення розміру шрифта*/
+    line-height: 1.5; /*для визначення простору між рядками*/
+    letter-spacing: 0.02em; /*для визначення відстані між літерами*/
+    color: #ffffff; /*кольору тексту*/
 }
+
+.subscribe {
+        display: flex; /*для розміщення елементів форми по горизонталі в рядок*/
+        gap: 24px; /*для визначення відступів між елементами форми*/
+    }
 
 .button_subcribe {
-    display: inline-flex;
-        padding: 8px 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        border-radius: 4px;
-        background: var(--IRIS, #4D5AE5);
-        color: var(--WHITE, #FFF);
-        text-align: center;
-            /* Button Text */
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px;
-            /* 150% */
-            letter-spacing: 0.64px;
+    min-width: 165px; /*мінімальної ширини кнопки*/
+    height: 40px; /*висоти кнопки*/
+    display: flex; /*розташування дочірніх елементів*/
+    justify-content: center; /*вирівнювання контенту по горизонталі*/
+    align-items: center; /*для вирівнювання контенту по вертикалі*/
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500; /*для визначення жирності шрифта*/
+    line-height: 1.5; /*для визначення простору між рядками*/
+    letter-spacing: 0.04em; /*відстані між літерами*/
+    color: #ffffff;
+    cursor: pointer; /*для визначення стилю курсору*/
+    background-color: #4D5AE5; /*кольору фону*/
+    border: none; /*вимкнення стандартного оформлення кнопки*/
+    border-radius: 4px; /*для визначення радіусу закруглення кутів елемента*/
 }
 
+svg {width: 24;
+height: 24;}
+
+.svg-button {
+    margin-left: 16px; /*для реалізації відступів*/
+}
 
 .inputmail {
-    border-radius: 4px;
-        border: 1px solid var(--WHITE, #FFF);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
+        border: 1px solid #ffffff; /*стиль,
+            ширину та колір межі навколо елемента*/
+        width: 264px;
+        height: 40px;
+        background-color: transparent; /*для визначення кольору фону*/
+        font-size: 12px; /*для визначення розміру шрифта*/
+        line-height: 1.5; /*простору між рядками*/
+        letter-spacing: 0.04em; /*для визначення відстані між літерами*/
+        padding-left: 16px; /*внутрішніх відступів для контенту*/
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); /*тінь на елемент*/
+        border-radius: 4px; /*для визначення радіусу закруглення кутів елемента*/
+        color: #ffffff; /*для визначення кольору тексту*/      
+    }
+
+    placeholder {
+        color #ffffff;
+    }
