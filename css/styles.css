@@ -643,8 +643,7 @@ height: 24;}
 }
 
 .inputmail {
-        border: 1px solid #ffffff; /*стиль,
-            ширину та колір межі навколо елемента*/
+        border: 1px solid #ffffff; /*стиль, ширину та колір межі навколо елемента*/
         width: 264px;
         height: 40px;
         background-color: transparent; /*для визначення кольору фону*/
@@ -657,6 +656,10 @@ height: 24;}
         color: #ffffff; /*для визначення кольору тексту*/      
     }
 
-    placeholder {
-        color #ffffff;
-    }
+input ::placeholder {
+    color: #ffffff;
+}
+
+input ::placeholder-shown {
+    border-color: #404BBF;
+}
