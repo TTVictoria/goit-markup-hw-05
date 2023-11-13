@@ -666,7 +666,45 @@ padding: 0;}
 .subscribe {
         display: flex; /*для розміщення елементів форми по горизонталі в рядок*/
         gap: 24px; /*для визначення відступів між елементами форми*/
+        align-items: baseline;
     }
+
+.label-subscribe {
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.inputmail {
+    border: 1px solid #ffffff; /*стиль, ширину та колір межі навколо елемента*/
+    width: 264px;
+    height: 40px;
+    background-color: transparent; /*для визначення кольору фону*/
+    font-size: 12px;    /*для визначення розміру шрифта*/
+    font-weight: 400;
+    line-height: 1.5;    /*простору між рядками*/
+    letter-spacing: 0.04em;    /*для визначення відстані між літерами*/
+    padding-left: 16px;    /*внутрішніх відступів для контенту*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));    /*тінь на елемент*/
+    border-radius: 4px;    /*для визначення радіусу закруглення кутів елемента*/
+    outline: transparent;
+    outline-offset: 5px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;    /*для визначення кольору тексту*/
+}
+
+.inputmail::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.inputmail:focus {
+    border-color: #4d5ae5;
+}
 
 .button_subcribe {
     min-width: 165px; /*мінімальної ширини кнопки*/
@@ -674,7 +712,7 @@ padding: 0;}
     display: flex; /*розташування дочірніх елементів*/
     justify-content: center; /*вирівнювання контенту по горизонталі*/
     align-items: center; /*для вирівнювання контенту по вертикалі*/
-    font-family: "Roboto", sans-serif;
+
     font-size: 16px;
     font-weight: 500; /*для визначення жирності шрифта*/
     line-height: 1.5; /*для визначення простору між рядками*/
@@ -693,13 +731,7 @@ svg {
 
 .svg-button {
     margin-left: 16px; /*для реалізації відступів*/
-    display: inline-flex;
-        padding: 8px 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        border-radius: 4px;
-            background: var(--IRIS, #4D5AE5);
+    fill: #FFFFFF;
 }
 
 .inputmail {
