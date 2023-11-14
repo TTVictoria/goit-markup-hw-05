@@ -708,7 +708,7 @@ height: 24px;}
     border-color: #4d5ae5;
 }
 
-.button_subcribe {
+.button_subscribe {
     min-width: 165px; /*мінімальної ширини кнопки*/
     height: 40px; /*висоти кнопки*/
     display: flex; /*розташування дочірніх елементів*/
