@@ -899,6 +899,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 /*4 дочірній елемент form*/
 .textarea-review {margin-bottom: 16px;}
 
+/*comment*/9
 .mail-review {width: 100%;
     height: 120px;
     font-size: 12px;
@@ -917,21 +918,30 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .mail-review:focus {border-color: #4d5ae5;
 outline-color: transparent;
 outline-offset: 5px;}
-
+/*5 дочірній елемент form*/
 .div-checkbox {
     margin-bottom: 24px;}
+/*checkbox 1 доч.елемент div*/
+.review-checkbox:checked {border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    outline: 1px solid #404bbf;}
 
+/*2 доч.елемент div*/
 .label-review-checkbox {
     font-size: 12px;
         font-weight: 400;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
+        border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;
 }
 
-.policy-link {text-decoration: underline;
-color: #4d5ae5;}
+.label-review-checkbox {outline: 1px solid #404bbf;}
 
+/*3 доч.елем.div*/
 .span-review-checkbox {
     width: 16px;
     height: 16px;
@@ -943,22 +953,18 @@ color: #4d5ae5;}
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;}
-
-.review-checkbox:checked {border: none;
-    background-color: #404bbf;
-    fill: #f4f4fd;}
-.label-review-checkbox {border: none;
-    background-color: #404bbf;
-    fill: #f4f4fd;}
-.span-review-checkbox {border: none;
+    fill: transparent;
+    border: none;
     background-color: #404bbf;
     fill: #f4f4fd;}
 
-.review-checkbox:checked {outline: 1px solid #404bbf;}
-.label-review-checkbox {outline: 1px solid #404bbf;}
 .span-review-checkbox {outline: 1px solid #404bbf;}
 
+/*посилання по політику*/
+.policy-link {text-decoration: underline;
+color: #4d5ae5;}
+
+/*кнопка*/
 .review-button {display: block;
     margin: 0 auto;
     font-weight: 500;
