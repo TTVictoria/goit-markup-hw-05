@@ -954,6 +954,10 @@ outline-offset: 5px;}
     fill: transparent;
     background-color: #404bbf;
     outline: 1px solid #404bbf;}
+/*проба виправлення помилки*/
+.review-checkbox:checked + span {
+    border: none;
+    fill: #F4F4FD;}
 
 /*посилання по політику*/
 .policy-link {text-decoration: underline;
