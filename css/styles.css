@@ -818,7 +818,7 @@ pointer-events: auto;
     border: none;
 }
 
-.div-button:focus {
+.div-button:focus, .div-button:active {
     background-color: #404bbf;
         border: none;
 }
