@@ -921,11 +921,15 @@ outline-offset: 5px;}
 /*5 дочірній елемент form*/
 .div-checkbox {
     margin-bottom: 24px;}
+    
 /*checkbox 1 доч.елемент div*/
-.review-checkbox:checked {border: none;
+.review-checkbox:checked + .span-review-checkbox {
+border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
     outline: 1px solid #404bbf;}
+    /*проба виправлення помилки*/
+
 
 /*2 доч.елемент div*/
 .label-review-checkbox {
@@ -954,10 +958,7 @@ outline-offset: 5px;}
     fill: transparent;
     background-color: #404bbf;
     outline: 1px solid #404bbf;}
-/*проба виправлення помилки*/
-.review-checkbox:checked + span {
-    border: none;
-    fill: #F4F4FD;}
+
 
 /*посилання по політику*/
 .policy-link {text-decoration: underline;
