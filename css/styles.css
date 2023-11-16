@@ -937,9 +937,7 @@ outline-offset: 5px;}
         border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
-}
-
-.label-review-checkbox {outline: 1px solid #404bbf;}
+    outline: 1px solid #404bbf;}
 
 /*3 доч.елем.div*/
 .span-review-checkbox {
@@ -956,9 +954,8 @@ outline-offset: 5px;}
     fill: transparent;
     border: none;
     background-color: #404bbf;
-    fill: #f4f4fd;}
-
-.span-review-checkbox {outline: 1px solid #404bbf;}
+    fill: #f4f4fd;
+    outline: 1px solid #404bbf;}
 
 /*посилання по політику*/
 .policy-link {text-decoration: underline;
