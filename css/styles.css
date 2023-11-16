@@ -886,7 +886,8 @@ pointer-events: auto;
     outline-offset: 5px;
 }
 
-.review-input:focus {fill: #4d5ae5;}
+.review-input:focus + .review-icon 
+{fill: #4d5ae5;}
 
 /*іконка персона*/
 .review-icon {position: absolute;
