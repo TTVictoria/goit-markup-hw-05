@@ -924,7 +924,7 @@ outline-offset: 5px;}
     margin-bottom: 24px;}
     
 /*checkbox 1 доч.елемент div*/
-.review-checkbox:checked + .span-review-checkbox {
+.review-checkbox:checked + .label-review-checkbox .span-review-checkbox {
 border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
