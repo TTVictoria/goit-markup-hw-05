@@ -931,6 +931,18 @@ border: none;
     outline: 1px solid #404bbf;}
     /*проба виправлення помилки*/
 
+/*приховання дефолтного чекбоксу*/    
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 /*2 доч.елемент div*/
 .label-review-checkbox {
