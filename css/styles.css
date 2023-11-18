@@ -739,7 +739,8 @@ ul-sozial {
 
 .icon-ellipse-footer {
     fill: #F4F4FD;
-}
+width: 24px;
+height: 24px;}
 
 
 .p-subscribe {
@@ -912,7 +913,6 @@ input ::placeholder-shown {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*кнопка х + іконка*/
 .button-open {
     position: absolute;
     top: 24px;
@@ -941,8 +941,7 @@ input ::placeholder-shown {
     border: none;
 }
 
-.div-modal {
-    fill: #2e2f42;
+.div-modal {fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -975,13 +974,6 @@ input ::placeholder-shown {
     font-weight: 500;
 }
 
-/*1 дочірній елемент form*/
-.div-review {
-    position: relative;
-    margin-bottom: 8px;
-}
-
-/*загальний стиль для name, phone, email, comment*/
 .label-review {
     display: block;
     color: #8e8f99;
@@ -997,7 +989,6 @@ input ::placeholder-shown {
     position: relative;
 }
 
-/*ячейка name*/
 .review-input {
     background-color: transparent;
     outline: transparent;
@@ -1015,31 +1006,19 @@ input ::placeholder-shown {
     outline-offset: 5px;
 }
 
-.review-input:focus+.review-icon {
-    fill: #4d5ae5;
-}
+.review-input:focus {fill: #4d5ae5;}
+.review-icon:focus {fill: #4d5ae5;}
 
-/*іконка персона*/
-.review-icon {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.div-review {position: relative;}
+.review-icon {position: absolute;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.review-icon:focus {
-    fill: #4d5ae5;
-}
+.textarea-review {margin-bottom: 16px;}
 
-/*4 дочірній елемент form*/
-.textarea-review {
-    margin-bottom: 16px;
-}
-
-/*comment*/
-.mail-review {
-    width: 100%;
+.mail-review {width: 100%;
     height: 120px;
     font-size: 12px;
     font-weight: 400;
@@ -1055,79 +1034,39 @@ input ::placeholder-shown {
     color: rgba(46, 47, 66, 0.4);
 }
 
-.mail-review:focus {
-    border-color: #4d5ae5;
-    outline-color: transparent;
-    outline-offset: 5px;
-}
+.mail-review:focus {border-color: #4d5ae5;
+outline-color: transparent;
+outline-offset: 5px;}
 
-/*5 дочірній елемент form*/
 .div-checkbox {
-    margin-bottom: 24px;
-}
+    margin-bottom: 24px;}
 
-/*checkbox 1 доч.елемент div*/
-.review-checkbox:checked+.label-review-checkbox .span-review-checkbox {
-    border: none;
-    background-color: #404bbf;
-    fill: #f4f4fd;
-}
-
-/*проба виправлення помилки*/
-
-/*приховання дефолтного чекбоксу*/
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-
-/*2 доч.елемент div*/
 .label-review-checkbox {
     font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    border: none;
-    /*background-color: #404bbf;*/
-    fill: #f4f4fd;
-    /*outline: 1px solid #404bbf;*/
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
 }
 
-/*3 доч.елем.div*/
-.span-review-checkbox {
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
+.policy-link {text-decoration: underline;
+color: #4d5ae5;}
+
+.review-checkbox:checked {border: none;
     background-color: #404bbf;
-    outline: 1px solid #404bbf;
-}
+    fill: #f4f4fd;}
+.label-review-checkbox {border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;}
+.span-review-checkbox {border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;}
 
+.review-checkbox:checked {outline: 1px solid #404bbf;}
+.label-review-checkbox {outline: 1px solid #404bbf;}
+.span-review-checkbox {outline: 1px solid #404bbf;}
 
-/*посилання по політику*/
-.policy-link {
-    text-decoration: underline;
-    color: #4d5ae5;
-}
-
-/*кнопка*/
-.review-button {
-    display: block;
+.review-button {display: block;
     margin: 0 auto;
     font-weight: 500;
     line-height: 1.5;
