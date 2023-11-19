@@ -1119,7 +1119,6 @@ input ::placeholder-shown {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    background-color: #404bbf;
     outline: 1px solid #404bbf;
     margin-right: 8px;
 }
